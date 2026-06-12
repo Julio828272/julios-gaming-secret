@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julio's Secret Website 🔥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">🔥 JULIO'S SECRET WEBSITE 🔥</h1>
+            <p class="subtitle">Gaming Hub - Call of Duty Edition</p>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search Google..." class="search-bar">
+            <button onclick="searchGoogle()" class="search-btn">Search</button>
+        </div>
+
+        <!-- Menu Buttons -->
+        <nav class="menu">
+            <button class="menu-btn" onclick="showCategory('guns')">🔫 GUNS</button>
+            <button class="menu-btn" onclick="showCategory('casual')">🎮 CASUAL</button>
+            <button class="menu-btn" onclick="showCategory('horror')">👻 HORROR</button>
+            <button class="menu-btn" onclick="showCategory('multiplayer')">👥 2 PLAYER</button>
+            <button class="menu-btn nowgg" onclick="openNowGG()">🌐 NOWGG.FUN</button>
+        </nav>
+
+        <!-- Games Container -->
+        <div class="games-container">
+            <div id="games-list" class="games-grid"></div>
+            <div id="game-view" class="game-view" style="display:none;">
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+                <div id="game-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
